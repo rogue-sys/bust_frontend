@@ -162,7 +162,7 @@ class _ThirdLayerState extends State<ThirdLayer> {
           //       checkLogin();
           //     },
           //     child: Container(
-          //       width: 99,
+          //       width: 140,
           //       height: 35,
           //       decoration: const BoxDecoration(
           //         color: signInButton,
@@ -185,25 +185,26 @@ class _ThirdLayerState extends State<ThirdLayer> {
           //     ),
           //   ),
           // ),
-          // Positioned(
-          //     top: 365,
-          //     left: 0,
-          //     right: 0,
-          //     child: SizedBox(
-                
-          //       height: 40,
-          //       child: ElevatedButton.icon(
-          //         onPressed: () {
-          //           checkLogin();
-          //         },
-          //         icon: const  Icon(Icons.check),
-          //         label: const Text('Login'),
-          //         style: ElevatedButton.styleFrom(
-          //           minimumSize: Size(150, 40),
-          //           backgroundColor: signInBox,
-          //         )
-          //       ),
-          //     )),
+         Positioned(
+  top: 365,
+  left: MediaQuery.of(context).size.width / 2 - 75,
+  right: MediaQuery.of(context).size.width / 2 - 75,
+  child: SizedBox(
+    height: 40,
+    child: ElevatedButton.icon(
+      onPressed: () {
+        checkLogin();
+      },
+      icon: const Icon(Icons.check),
+      label: const Text('Login'),
+      style: ElevatedButton.styleFrom(
+        minimumSize: const Size(150, 40),
+        backgroundColor: signInBox,
+      ),
+    ),
+  ),
+),
+
           Positioned(
               top: 432,
               left: 59,
